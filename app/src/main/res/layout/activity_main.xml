@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".view.principal.MainActivity">
+
+    <TextView
+        style="@style/titulo"
+        android:text="Pesquisa App"
+        />
+
+    <Button
+        style="@style/botao"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Dados pessoais"
+        android:onClick="resgatarDados"
+        android:id="@+id/btDadosPessoais"/>
+
+    <Button
+        style="@style/botao"
+        android:background="@android:color/holo_blue_light"
+        android:text="Dados profissionais"
+        android:onClick="resgatarDados"
+        android:id="@+id/btDadosProfissionais"
+        />
+
+    <Button
+        style="@style/botao"
+        android:background="@android:color/holo_orange_light"
+        android:text="Endereco"
+        android:onClick="resgatarDados"
+        android:id="@+id/btDadosEndereco"
+        />
+
+    <Button
+        style="@style/botao"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Contatos"
+        android:onClick="resgatarDados"
+        android:id="@+id/btDadosContato"
+        />
+
+    <Button
+        style="@style/botao"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Ver dados"
+        android:onClick="enviar"
+        android:id="@+id/btEnviarDados"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTesteRetorno"
+        />
+
+</LinearLayout>

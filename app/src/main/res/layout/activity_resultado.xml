@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".view.resultado.ResultadoActivity">
+    <TextView
+        style="@style/titulo"
+        android:text="Dados pessoais"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Nome: nome coletado\nCPF: 333.333.333-33\nIdade: 16 anos"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/tvResultadoPessoais"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Nome: nome coletado\nCPF: 333.333.333-33\nIdade: 16 anos"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/tvResultadoProfissional"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Nome: nome coletado\nCPF: 333.333.333-33\nIdade: 16 anos"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/tvResultadoEndereco1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Nome: nome coletado\nCPF: 333.333.333-33\nIdade: 16 anos"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/tvResultadoEndereco2"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/titulo"
+        android:text="Telefones (Clique para ligar)"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp" android:layout_marginBottom="20dp"
+        android:id="@+id/lvTelefones"></ListView>
+
+
+    <TextView
+        style="@style/titulo"
+        android:text="E-mails"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/lvEmails"></ListView>
+
+</LinearLayout>

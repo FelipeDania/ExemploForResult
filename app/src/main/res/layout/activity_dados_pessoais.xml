@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".view.intermediario.DadosPessoaisActivity">
+
+    <TextView
+        style="@style/titulo"
+        android:text="Informações pessoais"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seu nome"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.EditText"
+        android:hint="Informe seu nome"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/editNome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seu idade"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.EditText"
+        android:hint="Informe seu idade"
+        android:inputType="number"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/editIdade"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seu CPF"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.EditText"
+        android:hint="Informe seu CPF"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/editCpf"/>
+
+    <Button
+        style="@style/botao"
+        android:text="Enviar"
+        android:onClick="enviar"
+        android:background="@android:color/holo_green_dark"
+        />
+
+    <Button
+        style="@style/botao"
+        android:text="Cancelar"
+        android:onClick="cancelar"
+        android:background="@android:color/holo_blue_dark"
+        />
+</LinearLayout>
